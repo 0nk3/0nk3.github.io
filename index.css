@@ -233,17 +233,17 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--grey);
 }
 
-.btn--grey {
+.btn--green {
     background: var(--grey);
     transition: all 0.2s;
 }
 
-.btn--grey::after {
+.btn--green::after {
     display: none;
 }
 
-.btn--grey:hover,
-.btn--grey:focus {
+.btn--green:hover,
+.btn--green:focus {
     background: transparent;
 }
 
