@@ -109,7 +109,7 @@ img {
 h1,
 h2,
 h3 {
-    font-family: 'Jost', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 450;
     line-height: var(--line-height-small);
     color: var(--green);
@@ -150,11 +150,9 @@ h3 {
     .heading-primary {
         font-size: var(--font-size-large);
     }
-
     h2 {
         font-size: var(--font-size-medium-1);
     }
-
     h3 {
         font-size: var(--font-size-medium);
     }
@@ -187,18 +185,16 @@ p {
         transform: translateY(0);
         opacity: 0;
     }
-    30%{
-
+    16%{
         opacity: 1;
     }
-    40%{
-
+    33%{
         opacity: 1;
     }
-    65%{
+    50%{
         opacity: 1;
     }
-    75%{
+    66%{
         opacity: 1;
     }
     100%{
@@ -232,9 +228,6 @@ p {
 }
 
 
-
-
-/* --------------------------------------- */
 /* ----- Buttons and Links ----- */
 /* --------------------------------------- */
 
@@ -425,8 +418,10 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     padding: 1rem 0;
     text-decoration: none;
-    color: inherit;
+    color:#000;
     transition: all .2s;
+    font-weight: bolder;
+    
 }
 
 .nav__link::after {
@@ -444,7 +439,6 @@ body:not(.user-is-tabbing) a:focus {
 .nav__link:hover {
     color: var(--grey);
 }
-
 .nav__link:hover::after {
     right: 0;
     height: 2px;
@@ -480,15 +474,12 @@ body:not(.user-is-tabbing) a:focus {
     .header {
         text-align: center;
     }
-
     .header__text p {
         transform: scale(.8);
     }
 }
-
-/* --------------------------------------- */
 /* ----- Work ----- */
-/* --------------------------------------- */
+/* ---------------- */
 
 .work__box {
     display: flex;
@@ -522,7 +513,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__list {
-    /* list-style-type: square; */
+    list-style-type: square;
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
 }
@@ -554,31 +545,6 @@ body:not(.user-is-tabbing) a:focus {
         height: 4rem;
     }
 }
-
-/* ----- Clients ----- */
-
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
-}
-
 /* ----- About ----- */
 
 .about__content {
@@ -609,13 +575,11 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-
 .contact__info {
     max-width: var(--container-medium-width);
     justify-content: space-evenly;
 }
 
-/* --------------------------------------- */
 /* ----- Footer ----- */
 /* --------------------------------------- */
 
