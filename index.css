@@ -98,7 +98,6 @@ body {
 
 section {
     padding: var(--gutter-huge) 0;
-  
     border-bottom: var(--border-light);
 }
 
@@ -170,6 +169,70 @@ p {
         max-width: var(--container-small-width);
     }
 }
+ /* Add some animations */
+.bubbles img{
+    width: 50px;
+    animation: bubble 5s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -80px;
+}
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    30%{
+
+        opacity: 1;
+    }
+    40%{
+
+        opacity: 1;
+    }
+    65%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 1.5s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+    width: 25px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 2.5s;
+    width: 25px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3.5s;
+    width: 25px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 4s;
+    width: 25px;
+}
+
+
+
 
 /* --------------------------------------- */
 /* ----- Buttons and Links ----- */
@@ -179,8 +242,10 @@ a {
     color: var(--green);
     font-weight: 400;
     font-family: 'Jost', sans-serif;
-    transition: all .2s;
-    outline: 2px solid transparent;
+    transition: all .3s;
+    outline: 3px solid transparent;
+    margin: 2px;
+    border-radius: 5px;
 }
 
 ::-moz-focus-inner {
@@ -233,7 +298,6 @@ body:not(.user-is-tabbing) a:focus {
     right: 0;
     background: var(--grey);
 }
-
 .btn--green {
     background: var(--grey);
     transition: all 0.2s;
@@ -387,18 +451,16 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--grey);
 }
 
-/* --------------------------------------- */
 /* ----- Header ----- */
-/* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4)),
-        url('./images/setup.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4)),url('./images/setup.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
+    overflow: hidden;
 }
 
 .header__text {
@@ -550,6 +612,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .contact__info {
     max-width: var(--container-medium-width);
+    justify-content: space-evenly;
 }
 
 /* --------------------------------------- */

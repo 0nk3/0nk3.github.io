@@ -1,1 +1,1 @@
-# Personal Portfolio Webisite in HTML,CSS and JS.
+# Personal Portfolio Website in HTML,CSS and JS.
