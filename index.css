@@ -180,6 +180,8 @@ p {
     position: absolute;
     bottom: -80px;
 }
+/* Pause animation on mobile */
+@media(min-width: 760px){
 @keyframes bubble {
     0%{
         width: 30px;
@@ -207,6 +209,7 @@ p {
         transform: translateY(-80vh);
         opacity: 0;
     }
+}
 }
 .bubbles img:nth-child(1){
     animation-delay: 3s;
