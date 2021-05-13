@@ -168,11 +168,11 @@ p {
     }
 }
  /* Add some animations */
-.bubbles img{
+.float img{
     width: 50px;
     animation: bubble 7s linear infinite;
 }
-.bubbles{
+.float{
     width: 100%;
     display: flex;
     align-items: center;
@@ -211,27 +211,27 @@ p {
     }
 }
 }
-.bubbles img:nth-child(1){
+.float img:nth-child(1){
     animation-delay: 3s;
     width: 25px;
 }
-.bubbles img:nth-child(2){
+.float img:nth-child(2){
     animation-delay: 1s;
     width: 25px;
 }
-.bubbles img:nth-child(3){
+.float img:nth-child(3){
     animation-delay: 5s;
     width: 25px;
 }
-.bubbles img:nth-child(4){
+.float img:nth-child(4){
     animation-delay: 2.5s;
     width: 25px;
 }
-.bubbles img:nth-child(5){
+.float img:nth-child(5){
     animation-delay: 3.5s;
     width: 25px;
 }
-.bubbles img:nth-child(5){
+.float img:nth-child(5){
     animation-delay: 4s;
     width: 25px;
 }
@@ -302,6 +302,17 @@ body:not(.user-is-tabbing) a:focus {
 .btn--green {
     background: var(--grey);
     transition: all 0.2s;
+}
+.work__header {
+   padding:8px;
+   box-shadow:0 0 30px 20px #0000;
+   clip-path: inset(0 -100px);
+  transition:0.5s;
+}
+.work__header:hover{
+   background-color:#000;
+   color:#fff;
+   box-shadow:0 0 30px 20px #000;
 }
 
 .btn--green::after {
