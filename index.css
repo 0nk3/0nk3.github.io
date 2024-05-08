@@ -231,24 +231,24 @@ p {
     animation-delay: 3.5s;
     width: 25px;
 }
-.float img:nth-child(5){
+.float img:nth-child(6){
     animation-delay: 4s;
     width: 25px;
 }
-.float img:nth-child(6){
+.float img:nth-child(7){
     animation-delay: 2s;
     width: 25px;
 }
-.float img:nth-child(7){
+.float img:nth-child(8){
     animation-delay: 3s;
     width: 25px;
 }
-.float img:nth-child(8){
+.float img:nth-child(9){
     animation-delay: 2.5s;
     width: 25px;
 }
-.float img:nth-child(9){
-    animation-delay: 3.5s;
+.float img:nth-child(10){
+    animation-delay: 4s;
     width: 25px;
 }
 
