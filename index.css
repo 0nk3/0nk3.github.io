@@ -228,7 +228,7 @@ p {
     width: 25px;
 }
 .float img:nth-child(5){
-    animation-delay: 3.5s;
+    animation-delay: 1s;
     width: 25px;
 }
 .float img:nth-child(6){
@@ -240,7 +240,7 @@ p {
     width: 25px;
 }
 .float img:nth-child(8){
-    animation-delay: 3s;
+    animation-delay: 3.5s;
     width: 25px;
 }
 .float img:nth-child(9){
